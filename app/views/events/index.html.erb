@@ -1,0 +1,33 @@
+<p id="notice"><%= flash[:notice] %></p>
+<%= button_to "Create Event A", events_path(event_type: 'A', user_id: generate_random_user_id), method: :post, class: 'button-a' %>
+<%= button_to "Create Event B", events_path(event_type: 'B', user_id: generate_random_user_id), method: :post, class: 'button-b' %>
+
+
+
+<style>
+  .button-a {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .button-b {
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+</style>
